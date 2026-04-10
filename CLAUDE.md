@@ -1,10 +1,7 @@
-# [Your Domain] Knowledge Base — Schema
+# LLM-Wiki Knowledge Base — Schema
 
 ## Purpose
-
-<!-- CUSTOMIZE: Replace this with a one-paragraph description of your knowledge domain. -->
-<!-- Examples: "machine learning research", "19th-century literature", "competitive landscape for SaaS tools" -->
-This is an LLM-maintained knowledge base on [YOUR TOPIC]. The LLM writes and maintains all files under `wiki/`. The human curates raw sources and directs queries. The human never edits wiki files directly.
+This is an LLM-maintained knowledge base on LLM Wiki. The LLM writes and maintains all files under `wiki/`. The human curates raw sources and directs queries. The human never edits wiki files directly.
 
 ## Directory Layout
 
@@ -77,16 +74,9 @@ confidence: high | medium | low
 
 ## Tagging Taxonomy
 
-<!-- CUSTOMIZE: Replace these placeholder categories with tags relevant to your domain. -->
-<!-- Each category should have 3-8 specific tags. -->
-<!-- Example for a cooking KB: -->
-<!--   Cuisine: italian, japanese, french, mexican -->
-<!--   Technique: braising, fermenting, sous-vide, grilling -->
-<!--   Ingredient: protein, vegetable, grain, dairy -->
-
-- **Category-A**: `tag-1`, `tag-2`, `tag-3`
-- **Category-B**: `tag-4`, `tag-5`, `tag-6`
-- **Category-C**: `tag-7`, `tag-8`, `tag-9`
+- **LLM Domains**: `knowledge-synthesis`, `code-generation`, `qa-systems`, `reasoning`, `retrieval`
+- **Tools & Infrastructure**: `obsidian`, `claude`, `llm-agents`, `search-engines`, `indexing`, `markdown`
+- **Knowledge Operations**: `ingest`, `query`, `lint`, `synthesis`, `maintenance`, `cross-linking`
 - **Scope**: `foundational`, `advanced`, `experimental`
 - **Status**: `well-established`, `emerging`, `speculative`
 
