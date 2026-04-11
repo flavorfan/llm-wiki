@@ -1,10 +1,10 @@
 ---
 title: "RAG (Retrieval Augmented Generation)"
 type: concept
-tags: [retrieval, llm-agents, advanced]
+tags: [retrieval, llm-agents, advanced, stateless]
 created: 2026-04-10
-updated: 2026-04-10
-sources: ["raw/llm-wiki.md", "raw/Claude + Karpathy's Second Brain is INSANE.md"]
+updated: 2026-04-11
+sources: ["raw/llm-wiki.md", "raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/Andrej Karpathy's LLM Wiki  Bye Bye RAG.md"]
 confidence: high
 ---
 
@@ -12,7 +12,7 @@ confidence: high
 
 ## Definition
 
-Retrieval Augmented Generation (RAG) is an approach where LLMs retrieve relevant document chunks from a corpus at query time using search (typically embedding-based vector search), then generate answers based on those retrieved fragments. This contrasts with [[concepts/knowledge-compilation]], where knowledge is pre-compiled into a structured wiki that persists between queries.
+Retrieval Augmented Generation (RAG) is a **stateless** approach where LLMs retrieve relevant document chunks from a corpus at query time using search (typically embedding-based vector search), then generate answers based on those retrieved fragments. Each query is independent - the system searches documents again, picks relevant chunks again, and generates answers again with no memory of past understanding and no accumulation of knowledge. This contrasts with [[concepts/knowledge-compilation]], where knowledge is pre-compiled into a structured wiki that persists and compounds between queries.
 
 ## How It Works
 
@@ -84,14 +84,35 @@ Retrieval Augmented Generation (RAG) is an approach where LLMs retrieve relevant
 - **Cost**: Embedding generation and vector search infrastructure
 - **Lost connections**: Relationships between documents not captured
 
+## Stateless vs Stateful: The Fundamental Difference
+
+The key critique of RAG from the LLM wiki perspective is that **RAG is stateless in practice**:
+
+**RAG workflow:**
+- Search → Answer → Reset
+- Each query is independent
+- Nothing compounds
+- Knowledge is rediscovered every time
+
+**LLM Wiki workflow:**
+- Read → Organize → Link → Improve → Reuse
+- Queries build on prior synthesis
+- Knowledge compounds like interest
+- Connections persist and strengthen
+
+**Analogy:** "With RAG you cook every time you're hungry; with LLM Wiki you build a kitchen that keeps improving its recipes." The hardest part of knowledge management isn't reading information - it's maintaining structure, updating cross-references, resolving contradictions. RAG avoids this by never building persistent structure. LLM Wiki embraces it by letting the LLM handle maintenance automatically.
+
 ## Related Concepts
 
 - [[concepts/llm-knowledge-base]] — Alternative compilation-based approach
 - [[concepts/knowledge-compilation]] — Core difference in philosophy
 - [[concepts/query-workflow]] — Similar query goal, different mechanism
 - [[concepts/second-brain]] — Personal knowledge at scale between simple RAG and full LLM wiki
+- [[concepts/persistent-artifact]] — What RAG lacks and LLM wiki provides
+- [[concepts/knowledge-graph]] — Explicit structure that emerges from wiki but not from RAG
 
 ## Sources
 
 - [[summaries/llm-wiki]] — Distinguishes LLM wiki from RAG approaches
 - [[summaries/claude-karpathy-second-brain-video]] — RAG as advanced tier beyond second brain
+- [[summaries/bye-bye-rag]] — "Bye Bye RAG" article emphasizing stateless limitation and compound growth alternative
