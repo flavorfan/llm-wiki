@@ -1,10 +1,10 @@
 ---
 title: "Claude Code"
 type: entity
-tags: [tools, llm-agents, claude, ai-harness]
+tags: [tools, llm-agents, claude, ai-harness, auto-research]
 created: 2026-04-10
-updated: 2026-04-10
-sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/llm-wiki.md"]
+updated: 2026-04-11
+sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/llm-wiki.md", "raw/The only AutoResearch tutorial you'll ever need.md"]
 confidence: high
 ---
 
@@ -28,6 +28,7 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - Defines wiki schema, conventions, and workflows
 - Stores memory in `.claude/` directory
 - Can run skills and automation loops
+- Supports "bypass permissions" or "Yolo mode" for autonomous operation
 
 **Integration features:**
 - Git integration for version control
@@ -44,6 +45,14 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 3. **Query**: Ask questions against wiki, get cited answers
 4. **Lint**: `second brain lint` reviews wiki health
 5. **Loop**: Automate ingestion on schedule (e.g., every few hours)
+
+**AutoResearch Implementation** ([[concepts/auto-research]]):
+- Operates in bypass/Yolo mode for autonomous experimentation
+- Runs [[concepts/experiment-loop]] continuously
+- Modifies designated files based on [[concepts/three-file-architecture]]
+- Commits successful experiments, resets failures
+- Can run 100+ experiments overnight without human intervention
+- Used in tutorial demonstrations for website optimization and code improvement
 
 **Skill-based workflow:**
 - Setup wizard for new vaults
@@ -70,7 +79,15 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - [[entities/nick-b-zark]] — Built second brain skill for Claude Code
 - [[entities/vercel]] — Framework used for skill development
 
+## Related Concepts
+
+- [[concepts/llm-knowledge-base]] — Primary use case for wiki maintenance
+- [[concepts/auto-research]] — Used as autonomous optimization agent
+- [[concepts/autonomous-agents]] — Operates autonomously in bypass mode
+- [[concepts/experiment-loop]] — Executes optimization loops
+
 ## Sources
 
 - [[summaries/claude-karpathy-second-brain-video]] — Claude Code demonstration and setup
 - [[summaries/llm-wiki]] — Agent harness role in LLM wiki pattern
+- [[summaries/autoresearch-tutorial]] — Claude Code in AutoResearch workflows

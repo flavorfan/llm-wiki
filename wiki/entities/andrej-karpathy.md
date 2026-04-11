@@ -1,10 +1,10 @@
 ---
 title: "Andrej Karpathy"
 type: entity
-tags: [people, ai-research, openai]
+tags: [people, ai-research, openai, tesla, auto-research]
 created: 2026-04-10
-updated: 2026-04-10
-sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/karpathy-x.md", "raw/llm-wiki.md"]
+updated: 2026-04-11
+sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/karpathy-x.md", "raw/llm-wiki.md", "raw/The only AutoResearch tutorial you'll ever need.md"]
 confidence: high
 ---
 
@@ -12,15 +12,18 @@ confidence: high
 
 ## Overview
 
-Andrej Karpathy is a founding researcher at [[entities/openai]] and one of the top most influential people in AI. He is widely recognized for his work in deep learning and for making AI concepts accessible. He originated the [[concepts/llm-knowledge-base]] pattern that went "mega viral" in April 2026.
+Andrej Karpathy is a co-founder at [[entities/openai]] and one of the most legendary AI researchers of all time. He was the main person behind Tesla Autopilot and is widely recognized for his work in deep learning and for making AI concepts accessible. He invented the term "vibe coding" and originated both the [[concepts/llm-knowledge-base]] pattern and [[concepts/auto-research]] framework. Born in Czechoslovakia.
 
 ## Characteristics
 
 **Professional background:**
-- Founding researcher at OpenAI
+- Co-founder at OpenAI
+- Main person behind Tesla Autopilot
 - Expert in deep learning
 - Attended Stanford University
 - Top influential figure in AI community
+- Born in Czechoslovakia
+- Major contributor to open-source AI community
 
 **Communication style:**
 - Tweets that "go super viral" when released
@@ -32,6 +35,9 @@ Andrej Karpathy is a founding researcher at [[entities/openai]] and one of the t
 - Shifted token throughput from manipulating code to manipulating knowledge (markdown and images)
 - Builds and shares personal workflow innovations that become industry patterns
 - Creates "idea files" rather than rigid specifications
+- Invented the term "vibe coding"
+- Predicts all LLM frontier labs will use some form of [[concepts/auto-research]]
+- Believes we might be "in the early stages of the singularity"
 
 ## Common Strategies
 
@@ -40,6 +46,14 @@ Andrej Karpathy is a founding researcher at [[entities/openai]] and one of the t
 - April 2nd, 2026 tweet on building LLM knowledge bases step-by-step
 - Follow-up tweet on "idea file" concept - intentionally abstract framework
 - Real-world wiki: ~100 articles, ~400K words on research topics
+
+**AutoResearch Framework** ([[concepts/auto-research]]):
+- Created open-source project for autonomous AI self-improvement
+- Origin: Was manually optimizing GPT-2 training for months, realized an AI agent could automate this
+- Defines [[concepts/three-file-architecture]]: program.md, train.py, prepare.py
+- Core principle: "Any metric you care about that is reasonably efficient to evaluate can be auto researched"
+- Vision: SETI@home model but for AI research - distributed across millions of computers
+- Predicts this is "the final boss battle" for AI labs
 
 **Workflow:**
 - Uses [[entities/obsidian]] as IDE frontend
@@ -66,3 +80,4 @@ Andrej Karpathy is a founding researcher at [[entities/openai]] and one of the t
 - [[summaries/karpathy-x]] — His original tweet describing the workflow
 - [[summaries/llm-wiki]] — The idea file pattern he created
 - [[summaries/claude-karpathy-second-brain-video]] — Tutorial based on his tweets
+- [[summaries/autoresearch-tutorial]] — Comprehensive tutorial on his AutoResearch framework

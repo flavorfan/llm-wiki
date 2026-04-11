@@ -77,3 +77,51 @@ Each entry follows this format:
   - Wiki now spans: foundational pattern, practical implementation, philosophical critique, historical context, tool ecosystem, scaling considerations
   - Total corpus: 6 sources ingested (3 today + 3 previous)
   - Confidence levels: All new pages high confidence (well-documented across sources) except Extended Brain (medium - single reference), qmd (medium - brief mentions), MindStudio (medium - primarily from one promotional source)
+
+---
+
+### 2026-04-11 — Ingest | AutoResearch comprehensive tutorial
+
+- **Source/Trigger**: Ingested raw/The only AutoResearch tutorial you'll ever need.md
+- **Pages created**:
+  - **Summaries (1)**: autoresearch-tutorial.md
+  - **Concepts (9)**: auto-research.md, three-file-architecture.md, recursive-self-improvement.md, autonomous-agents.md, experiment-loop.md, metric-driven-optimization.md, git-based-rollback.md, fixed-time-budget.md, vibe-coding.md
+  - **Entities (7)**: david-andre.md, puppeteer.md, cursor.md, eric-seu.md, harrison-chase.md, vs-code.md, oxylabs.md
+- **Pages updated**:
+  - andrej-karpathy.md (added AutoResearch framework creation, Tesla Autopilot role, "vibe coding" term invention, predictions about AI future)
+  - claude-code.md (added AutoResearch implementation strategy, bypass/Yolo mode usage, autonomous experimentation capabilities)
+  - index.md (added 18 new pages to catalog, updated 2 entity entries)
+  - log.md (this entry)
+- **Notes**:
+  - **New domain**: First source outside pure LLM knowledge base pattern - introduces **AutoResearch** as autonomous AI experimentation framework
+  - **Core innovation**: AI agents that autonomously run experiments, evaluate results, keep what works (git commit), discard what doesn't (git reset), operating on **three-file architecture** (program.md for goals, train.py for optimization target, prepare.py for evaluation metric)
+  - **Key constraints**:
+    - Fixed time budget per experiment (fair comparison, prevents "cheating by training longer")
+    - One scalar metric (objective evaluation)
+    - Immutable goal and eval files (prevents agent from gaming the system)
+    - Git-based rollback (clean binary decision: commit success or reset failure)
+  - **Karpathy connection**: AutoResearch is another Karpathy innovation alongside LLM Wiki - both represent shift toward AI autonomy (Wiki maintenance and experimental optimization)
+  - **Broad applications**: Tutorial emphasizes AutoResearch extends far beyond ML training:
+    - Trading strategies (Sharpe ratio optimization)
+    - Marketing (A/B testing at 1,200x scale: 30 experiments/year → 36,000/year)
+    - Code performance (website optimization: 50ms → 25ms in 4 minutes)
+    - Prompt engineering (system instruction optimization)
+    - Any domain with clear metric + automated evaluation + fast feedback
+  - **Future predictions**:
+    - All LLM frontier labs will use AutoResearch ("final boss battle")
+    - Execution becomes "basically free" - value shifts to metric selection and constraint design
+    - Mobile AI: Sonnet 4.6 quality on iPhones in 3-4 months
+    - SETI@home model for AI research (distributed autonomous experimentation)
+    - "We might be in the early stages of the singularity"
+  - **New concept introduced**: **Recursive self-improvement** - AI improving itself autonomously, with each improvement enabling better improvements (though current AutoResearch is more "iterative improvement" than true recursion)
+  - **Tool ecosystem**: Demonstrates Claude Code and Cursor in bypass/Yolo mode for autonomous operation, Puppeteer for web benchmarking, git for experiment management
+  - **Where it fails**: Subjective metrics (UX, brand design, pricing), slow feedback loops, bad metric definition leads to confident wrong optimization
+  - **Philosophical insight**: Not "better chatbots" but "real autonomous loops doing meaningful work" - represents evolution from conversational AI to task-driven agents
+  - **Cross-domain synthesis opportunity**: AutoResearch (continuous optimization) + LLM Wiki (knowledge compilation) together represent shift toward autonomous AI systems that both maintain knowledge and improve performance without human intervention
+  - **Confidence levels**:
+    - High confidence (14 pages): Core AutoResearch concepts well-explained with concrete examples and demonstrations
+    - Medium confidence (3 pages): cursor.md, eric-seu.md, harrison-chase.md (brief mentions, limited detail)
+    - Low confidence (1 page): vibe-coding.md (term mentioned as Karpathy invention but not defined in source)
+  - No contradictions with existing wiki content - AutoResearch complements LLM Wiki pattern rather than conflicting
+  - Total corpus: 7 sources ingested
+  - Wiki statistics: 55 total pages (28 concepts, 19 entities, 7 summaries, 0 syntheses)
