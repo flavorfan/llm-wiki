@@ -125,3 +125,56 @@ Each entry follows this format:
   - No contradictions with existing wiki content - AutoResearch complements LLM Wiki pattern rather than conflicting
   - Total corpus: 7 sources ingested
   - Wiki statistics: 55 total pages (28 concepts, 19 entities, 7 summaries, 0 syntheses)
+
+---
+
+### 2026-04-12 — Ingest | Obsidian CLI and Skills ecosystem
+
+- **Source/Trigger**: Ingested raw/Obsidian CLI.md, raw/Obsidian 官方 CLI 命令全景速查表.md, raw/Obsidian 必装 Skills.md
+- **Pages created**:
+  - **Summaries (3)**: obsidian-cli-core-principles.md, obsidian-cli-command-reference.md, obsidian-essential-skills.md
+  - **Concepts (6)**: obsidian-cli.md, agent-skills.md, token-optimization.md, defuddle.md, automation-workflows.md, obsidian-bases.md
+  - **Entities (2)**: steph-ango.md, n8n.md
+- **Pages updated**:
+  - obsidian.md (added CLI feature, Bases feature, leadership info, privacy philosophy, updated sources)
+  - claude-code.md (added Skills integration, CLI integration, token efficiency notes)
+  - index.md (added 11 new pages to catalog, updated 2 entity entries, revised statistics)
+  - log.md (this entry)
+- **Notes**:
+  - **Domain expansion**: First sources focused on **tooling layer** rather than pure LLM Wiki pattern - these cover the infrastructure (CLI, Skills) that enables LLM-Obsidian integration
+  - **Obsidian CLI** (v1.12+): Official command-line interface that communicates with running Obsidian process rather than direct file I/O
+  - **Key innovation - Token optimization**: CLI queries internal indices (~100 tokens) vs scanning entire vault (500,000+ tokens) - 99.98% reduction in token consumption
+  - **Two paradigms identified**:
+    - **Modern (CLI-based)**: Token-efficient, preserves graph integrity, auto-updates wikilinks (recommended)
+    - **Legacy (file I/O)**: Token-intensive, risk of broken links and sync corruption (deprecated)
+  - **Skills ecosystem**: Agent capabilities are packaged as Skills (SKILL.md files) with directory structure `.claude/skills/<skill-name>/`
+  - **Official Skills** by [[entities/steph-ango]] (Obsidian CEO, kepano):
+    - obsidian-cli: Wraps CLI commands for agents
+    - obsidian-bases: Creates Notion-like database views with formulas
+    - obsidian-markdown: Writes Obsidian-flavored Markdown
+    - defuddle: Web scraping to clean Markdown, YouTube transcripts
+    - json-canvas: Creates whiteboard files (now deprecated)
+  - **Community Skills**:
+    - Axton (axtonliu): canvas-creator, mermaid-visualizer, excalidraw-diagram
+    - RoundTable02: tutor-setup + tutor (learning system with quizzes)
+    - EESJGong: scholar-skill (L1-L3 academic paper reading, 2.5+ hour deep loops, $100+ token costs)
+  - **Seven automation workflow patterns** documented:
+    1. Flash capture (instant append to daily note)
+    2. Media knowledge extraction (YouTube → structured notes)
+    3. AI inbox sorting (batch categorization + metadata normalization)
+    4. Local RAG assistant (search:context + backlinks, no vector DB needed)
+    5. Database integration (external webhooks → Bases records)
+    6. Historical revival (random old note → AI cross-links → daily reflection)
+    7. Bulk metadata cleaning (normalize inconsistent YAML properties)
+  - **Obsidian Bases**: New native database feature (v1.12+), creates dynamic views (table/cards/list/map) with filters and formulas over note properties
+  - **Privacy philosophy clarified**: Obsidian team (CEO Steph Ango, co-founders Erica Xu & Shida Li) maintains strong local-first stance - will never force cloud AI, CLI as "open external interface"
+  - **n8n integration**: Local workflow automation tool, requires `NODES_EXCLUDE=[]` to enable shell commands for Obsidian CLI access
+  - **Installation methods**: BRAT (Beta Reviewers Auto-updater Tool) for auto-updating beta plugins, manual installation for offline scenarios
+  - **Risk awareness**: Scholar-skill L3 mode can consume $100+ per paper with frontier models, uses deprecated file I/O approach (risk of data corruption during sync)
+  - **Platform compatibility**: CLI works across Windows/Mac/Linux but requires running Obsidian process (not suitable for headless servers)
+  - **Cross-wiki connections**: Token optimization concept bridges to existing [[concepts/rag]] - both address retrieval efficiency but via different mechanisms (CLI indices vs vector embeddings)
+  - **Complementary to existing content**: These sources describe the **implementation layer** (how to actually integrate AI with Obsidian) while previous sources described the **pattern layer** (what LLM Wiki pattern is conceptually)
+  - **No contradictions found**: Sources are internally consistent and align with established wiki content
+  - **Confidence levels**: All 11 new pages high confidence (well-documented with concrete examples, command references, and multiple corroborating details)
+  - Total corpus: 10 sources ingested (3 today + 7 previous)
+  - Wiki statistics: 66 total pages (34 concepts, 21 entities, 10 summaries, 0 syntheses)

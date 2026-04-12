@@ -1,7 +1,7 @@
 ---
 title: "Knowledge Base Index"
 type: index
-updated: 2026-04-11
+updated: 2026-04-12
 ---
 
 # Knowledge Base Index
@@ -40,6 +40,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/git-based-rollback]] | auto-research, version-control, workflow, experimentation | high | 2026-04-11 |
 | [[concepts/fixed-time-budget]] | auto-research, experimentation, fairness, methodology | high | 2026-04-11 |
 | [[concepts/vibe-coding]] | ai-coding, development-workflow, llm-agents, foundational | low | 2026-04-11 |
+| [[concepts/obsidian-cli]] | obsidian, cli, tools, ai-agents, token-optimization | high | 2026-04-12 |
+| [[concepts/agent-skills]] | ai-agents, claude-code, capabilities, skills, obsidian | high | 2026-04-12 |
+| [[concepts/token-optimization]] | token-efficiency, cost-optimization, ai-agents, obsidian | high | 2026-04-12 |
+| [[concepts/defuddle]] | tools, web-scraping, markdown, token-optimization, obsidian | high | 2026-04-12 |
+| [[concepts/automation-workflows]] | automation, obsidian, workflows, productivity | high | 2026-04-12 |
+| [[concepts/obsidian-bases]] | obsidian, databases, data-structures, views, notion-like | high | 2026-04-12 |
 
 ## Entities
 
@@ -64,6 +70,8 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/harrison-chase]] | people, ai-research, langchain, founders | 2026-04-11 |
 | [[entities/vs-code]] | tools, ide, development-environment, microsoft | 2026-04-11 |
 | [[entities/oxylabs]] | tools, web-scraping, data-collection, api | 2026-04-11 |
+| [[entities/steph-ango]] | people, obsidian, leadership, tools | 2026-04-12 |
+| [[entities/n8n]] | tools, automation, workflow, no-code | 2026-04-12 |
 
 ## Summaries
 
@@ -76,6 +84,9 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/chinese-comprehensive-guide]] | raw/LLM Wiki：让大模型替你打理知识库的完整指南.md | Comprehensive analysis: architecture, history, critique, tools, implementation | 2026-04-11 |
 | [[summaries/mindstudio-practical-guide]] | raw/What Is Andrej Karpathy's LLM Wiki How to Build a Personal Knowledge Base With Claude Code.md | 5-minute setup, note templates, best practices, team scaling | 2026-04-11 |
 | [[summaries/autoresearch-tutorial]] | raw/The only AutoResearch tutorial you'll ever need.md | AutoResearch framework, three-file architecture, autonomous optimization, use cases | 2026-04-11 |
+| [[summaries/obsidian-cli-core-principles]] | raw/Obsidian CLI.md | CLI architecture, AI agent integration, token optimization, privacy philosophy | 2026-04-12 |
+| [[summaries/obsidian-cli-command-reference]] | raw/Obsidian 官方 CLI 命令全景速查表.md | Complete CLI command catalog, automation workflows, 25+ functional modules | 2026-04-12 |
+| [[summaries/obsidian-essential-skills]] | raw/Obsidian 必装 Skills.md | Essential Skills catalog, CLI vs file I/O, plugins, installation methods | 2026-04-12 |
 
 ## Syntheses
 
@@ -85,12 +96,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 55
-- **Concepts**: 28
-- **Entities**: 19
-- **Summaries**: 7
+- **Total pages**: 66
+- **Concepts**: 34
+- **Entities**: 21
+- **Summaries**: 10
 - **Syntheses**: 0
-- **Sources ingested**: 7
-- **High confidence**: 50
-- **Medium confidence**: 4
+- **Sources ingested**: 10
+- **High confidence**: 64
+- **Medium confidence**: 1
 - **Low confidence**: 1

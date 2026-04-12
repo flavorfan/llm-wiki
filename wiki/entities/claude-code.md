@@ -3,8 +3,8 @@ title: "Claude Code"
 type: entity
 tags: [tools, llm-agents, claude, ai-harness, auto-research]
 created: 2026-04-10
-updated: 2026-04-11
-sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/llm-wiki.md", "raw/The only AutoResearch tutorial you'll ever need.md"]
+updated: 2026-04-12
+sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/llm-wiki.md", "raw/The only AutoResearch tutorial you'll ever need.md", "raw/Obsidian CLI.md", "raw/Obsidian 必装 Skills.md"]
 confidence: high
 ---
 
@@ -27,8 +27,15 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - Uses `CLAUDE.md` files for project-specific instructions
 - Defines wiki schema, conventions, and workflows
 - Stores memory in `.claude/` directory
+- **[[concepts/agent-skills]]** stored in `.claude/skills/` directory
 - Can run skills and automation loops
 - Supports "bypass permissions" or "Yolo mode" for autonomous operation
+
+**Obsidian Integration** (via [[concepts/obsidian-cli]]):
+- Calls CLI commands through obsidian-cli Skill
+- Extremely token-efficient (~100 tokens vs 500,000+ for file scanning)
+- Preserves graph integrity (auto-updates wikilinks)
+- Can trigger Obsidian operations from agent workflows
 
 **Integration features:**
 - Git integration for version control
@@ -60,11 +67,13 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - Query skill searches and synthesizes
 - Lint skill health checks
 - Built using Vercel's framework for compatibility
+- Official Skills by [[entities/steph-ango]]: obsidian-cli, obsidian-bases, obsidian-markdown, defuddle
 
 **Agent agnostic design:**
 - Skills work across Claude Code, Codex, Gemini CLI, Open Code, Pi
 - Both CLAUDE.md and AGENTS.md files for cross-compatibility
 - Can be customized to individual needs
+- Directory structure: `.claude/skills/<skill-name>/SKILL.md`
 
 **Human-AI collaboration:**
 - LLM agent on one side of screen
@@ -91,3 +100,5 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - [[summaries/claude-karpathy-second-brain-video]] — Claude Code demonstration and setup
 - [[summaries/llm-wiki]] — Agent harness role in LLM wiki pattern
 - [[summaries/autoresearch-tutorial]] — Claude Code in AutoResearch workflows
+- [[summaries/obsidian-cli-core-principles]] — Integration architecture
+- [[summaries/obsidian-essential-skills]] — Skills ecosystem
