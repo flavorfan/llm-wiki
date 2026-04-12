@@ -56,7 +56,7 @@ Defuddle is a web content extraction tool that converts web pages into clean Mar
 
 **Ideal for**:
 - Reading online articles/blog posts with AI
-- Capturing web documentation into Obsidian
+- Capturing web documentation into [[entities/obsidian]]
 - Processing newsletters or medium posts
 - Extracting YouTube video transcripts
 - Reducing token costs when analyzing web content

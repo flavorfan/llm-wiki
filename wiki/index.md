@@ -41,6 +41,9 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/fixed-time-budget]] | auto-research, experimentation, fairness, methodology | high | 2026-04-11 |
 | [[concepts/vibe-coding]] | ai-coding, development-workflow, llm-agents, foundational | low | 2026-04-11 |
 | [[concepts/obsidian-cli]] | obsidian, cli, tools, ai-agents, token-optimization | high | 2026-04-12 |
+| [[concepts/search-engines]] | search, retrieval, tools, infrastructure | medium | 2026-04-12 |
+| [[concepts/output-formats]] | query, formatting, presentation, workflow | medium | 2026-04-12 |
+| [[concepts/vault-management]] | obsidian, knowledge-management, workflow, organization | medium | 2026-04-12 |
 | [[concepts/agent-skills]] | ai-agents, claude-code, capabilities, skills, obsidian | high | 2026-04-12 |
 | [[concepts/token-optimization]] | token-efficiency, cost-optimization, ai-agents, obsidian | high | 2026-04-12 |
 | [[concepts/defuddle]] | tools, web-scraping, markdown, token-optimization, obsidian | high | 2026-04-12 |
@@ -72,6 +75,11 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/oxylabs]] | tools, web-scraping, data-collection, api | 2026-04-11 |
 | [[entities/steph-ango]] | people, obsidian, leadership, tools | 2026-04-12 |
 | [[entities/n8n]] | tools, automation, workflow, no-code | 2026-04-12 |
+| [[entities/nick-b-zark]] | people, content-creator, ai-education, claude-code | 2026-04-12 |
+| [[entities/peter-levels]] | people, indie-hacker, productivity, entrepreneur | 2026-04-12 |
+| [[entities/erica-xu]] | people, obsidian, team-member | 2026-04-12 |
+| [[entities/shida-li]] | people, obsidian, team-member, developer | 2026-04-12 |
+| [[entities/vercel]] | companies, hosting, web-development, infrastructure | 2026-04-12 |
 
 ## Summaries
 
@@ -96,12 +104,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 66
-- **Concepts**: 34
-- **Entities**: 21
+- **Total pages**: 74
+- **Concepts**: 37
+- **Entities**: 26
 - **Summaries**: 10
 - **Syntheses**: 0
 - **Sources ingested**: 10
 - **High confidence**: 64
-- **Medium confidence**: 1
-- **Low confidence**: 1
+- **Medium confidence**: 4
+- **Low confidence**: 6

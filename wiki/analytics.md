@@ -2,7 +2,7 @@
 title: "Analytics"
 type: dashboard
 tags: [meta]
-updated: 2026-04-08
+updated: 2026-04-12
 ---
 
 # Analytics
@@ -22,11 +22,11 @@ options:
     position: right
 data:
   - label: Concepts
-    value: 0
+    value: 37
   - label: Entities
-    value: 0
+    value: 26
   - label: Summaries
-    value: 0
+    value: 10
   - label: Syntheses
     value: 0
 ```
@@ -41,13 +41,13 @@ options:
   indexAxis: y
 data:
   - label: High
-    value: 0
+    value: 64
     backgroundColor: "#4caf50"
   - label: Medium
-    value: 0
+    value: 4
     backgroundColor: "#ff9800"
   - label: Low
-    value: 0
+    value: 6
     backgroundColor: "#f44336"
 ```
 
