@@ -141,6 +141,9 @@ git submodule add https://github.com/user/skill-name
 
 ## Related Concepts
 
+- [[concepts/claude-skills]] — Claude Code's skill system and Skills 2.0 methodology
+- [[concepts/meta-skills]] — Skills that create or modify other skills
+- [[concepts/skill-testing]] — Automated skill evaluation and improvement
 - [[concepts/obsidian-cli]] — Underlying tool that modern Skills use
 - [[concepts/token-optimization]] — Why CLI-based Skills matter
 - [[concepts/defuddle]] — Specific example of a Skill

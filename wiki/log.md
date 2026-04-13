@@ -218,3 +218,38 @@ Each entry follows this format:
   - Weakly-linked pages are valid but could benefit from more integration into knowledge graph
   - vibe-coding.md is a known issue - awaiting sources that define the term
   - Overall wiki health is excellent with strong structure and cross-linking
+
+---
+
+### 2026-04-13 — Ingest | Claude Skills 2.0 and Skill Creator methodology
+
+- **Source/Trigger**: Ingested raw/claude-skills-2-how-to-use-skill-creator.md (video transcript from Clippings folder)
+- **Pages created**:
+  - **Summaries (1)**: claude-skills-2-skill-creator.md
+  - **Concepts (3)**: claude-skills.md, meta-skills.md, skill-testing.md
+  - **Entities (2)**: nick-babich.md, skill-creator.md
+- **Pages updated**:
+  - agent-skills.md (added cross-links to claude-skills, meta-skills, skill-testing)
+  - claude-code.md (added Skills 2.0 section, Skill Creator references, cross-links, updated sources)
+  - index.md (added 6 new pages to catalog, updated statistics)
+  - log.md (this entry)
+- **Notes**:
+  - **Skills 2.0**: Community term for improved skill creation process using the Skill Creator meta-skill
+  - **Core innovation**: Skill Creator is a meta-skill that creates other skills with built-in testing and evaluation
+  - **Self-improvement loop**: Creates skill → generates test cases → runs tests → improves based on results → delivers final tested skill
+  - **Workflow automation**: Fully automated creation process taking ~10 minutes for complex skills
+  - **Quality improvements demonstrated**: Adds features beyond initial requirements (animations, CSS variables, enhanced specifications)
+  - **Meta-programming concept**: Skills that operate on other skills rather than performing direct tasks
+  - **Claude skills structure**: Markdown files with front matter (triggers) and content (workflow instructions)
+  - **Installation options**: Per-project or global ("for you") via `manage plugins` command
+  - **Practical example**: "Super landing page" skill generating Apple-style designs from descriptions
+  - **Connection to existing content**: Relates to [[concepts/agent-skills]] but focuses specifically on Claude Code's skill system and the testing-driven methodology
+  - **New entity**: Nick Babich (distinct from Nick B Zark) - UX designer creating AI tool tutorials
+  - **Skill Creator entity**: The meta-skill tool itself, central to Skills 2.0 approach
+  - **Testing concept**: Automated evaluation distinguishes Skills 2.0 from manual skill creation
+  - **No contradictions found**: Content complements existing agent-skills documentation by adding Claude-specific implementation details
+  - **Cross-links added**: agent-skills.md now references the three new concept pages
+  - **Confidence levels**: All 6 new pages high confidence (clear demonstration with concrete examples and detailed workflow)
+  - Total corpus: 11 sources ingested (1 today + 10 previous)
+  - Wiki statistics: 80 total pages (40 concepts, 28 entities, 11 summaries, 0 syntheses)
+  - High confidence: 70, Medium confidence: 4, Low confidence: 6

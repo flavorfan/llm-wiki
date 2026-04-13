@@ -1,10 +1,10 @@
 ---
 title: "Claude Code"
 type: entity
-tags: [tools, llm-agents, claude, ai-harness, auto-research]
+tags: [tools, llm-agents, claude, ai-harness, auto-research, skills-2-0]
 created: 2026-04-10
-updated: 2026-04-12
-sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/llm-wiki.md", "raw/The only AutoResearch tutorial you'll ever need.md", "raw/Obsidian CLI.md", "raw/Obsidian 必装 Skills.md"]
+updated: 2026-04-13
+sources: ["raw/Claude + Karpathy's Second Brain is INSANE.md", "raw/llm-wiki.md", "raw/The only AutoResearch tutorial you'll ever need.md", "raw/Obsidian CLI.md", "raw/Obsidian 必装 Skills.md", "raw/claude-skills-2-how-to-use-skill-creator.md"]
 confidence: high
 ---
 
@@ -69,6 +69,14 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - Built using Vercel's framework for compatibility
 - Official Skills by [[entities/steph-ango]]: obsidian-cli, obsidian-bases, obsidian-markdown, defuddle
 
+**Skills 2.0** (via [[entities/skill-creator]]):
+- Meta-skill that creates other skills with automated testing
+- Fully automated skill generation (~10 minutes for complex skills)
+- Built-in [[concepts/skill-testing]] and iterative improvement
+- Managed via `manage plugins` command
+- Can install per-project or globally ("for you")
+- Demonstrates [[concepts/meta-skills]] approach to skill development
+
 **Agent agnostic design:**
 - Skills work across Claude Code, Codex, Gemini CLI, Open Code, Pi
 - Both CLAUDE.md and AGENTS.md files for cross-compatibility
@@ -85,12 +93,17 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 
 - [[entities/obsidian]] — Frontend IDE that Claude Code edits
 - [[entities/andrej-karpathy]] — Originated pattern Claude Code implements
+- [[entities/skill-creator]] — Meta-skill for Skills 2.0 methodology
+- [[entities/nick-babich]] — Created Skills 2.0 tutorials
 - [[entities/nick-b-zark]] — Built second brain skill for Claude Code
 - [[entities/vercel]] — Framework used for skill development
 
 ## Related Concepts
 
 - [[concepts/llm-knowledge-base]] — Primary use case for wiki maintenance
+- [[concepts/claude-skills]] — Skill system and structure
+- [[concepts/meta-skills]] — Skills that create other skills
+- [[concepts/skill-testing]] — Automated skill evaluation
 - [[concepts/auto-research]] — Used as autonomous optimization agent
 - [[concepts/autonomous-agents]] — Operates autonomously in bypass mode
 - [[concepts/experiment-loop]] — Executes optimization loops
@@ -102,3 +115,4 @@ Claude Code is Anthropic's AI agent harness (CLI tool) for software development 
 - [[summaries/autoresearch-tutorial]] — Claude Code in AutoResearch workflows
 - [[summaries/obsidian-cli-core-principles]] — Integration architecture
 - [[summaries/obsidian-essential-skills]] — Skills ecosystem
+- [[summaries/claude-skills-2-skill-creator]] — Skills 2.0 methodology and Skill Creator

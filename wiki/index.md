@@ -49,6 +49,9 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/defuddle]] | tools, web-scraping, markdown, token-optimization, obsidian | high | 2026-04-12 |
 | [[concepts/automation-workflows]] | automation, obsidian, workflows, productivity | high | 2026-04-12 |
 | [[concepts/obsidian-bases]] | obsidian, databases, data-structures, views, notion-like | high | 2026-04-12 |
+| [[concepts/claude-skills]] | claude-code, foundational, automation, instructions, workflow | high | 2026-04-13 |
+| [[concepts/meta-skills]] | claude-code, meta-programming, automation, self-improvement, advanced | high | 2026-04-13 |
+| [[concepts/skill-testing]] | claude-code, testing, quality-assurance, automation, evaluation | high | 2026-04-13 |
 
 ## Entities
 
@@ -80,6 +83,8 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/erica-xu]] | people, obsidian, team-member | 2026-04-12 |
 | [[entities/shida-li]] | people, obsidian, team-member, developer | 2026-04-12 |
 | [[entities/vercel]] | companies, hosting, web-development, infrastructure | 2026-04-12 |
+| [[entities/nick-babich]] | people, content-creator, ai-education, claude-code, ux-design | 2026-04-13 |
+| [[entities/skill-creator]] | tools, meta-skills, claude-code, automation, code-generation | 2026-04-13 |
 
 ## Summaries
 
@@ -95,6 +100,7 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/obsidian-cli-core-principles]] | raw/Obsidian CLI.md | CLI architecture, AI agent integration, token optimization, privacy philosophy | 2026-04-12 |
 | [[summaries/obsidian-cli-command-reference]] | raw/Obsidian 官方 CLI 命令全景速查表.md | Complete CLI command catalog, automation workflows, 25+ functional modules | 2026-04-12 |
 | [[summaries/obsidian-essential-skills]] | raw/Obsidian 必装 Skills.md | Essential Skills catalog, CLI vs file I/O, plugins, installation methods | 2026-04-12 |
+| [[summaries/claude-skills-2-skill-creator]] | raw/claude-skills-2-how-to-use-skill-creator.md | Skills 2.0 methodology, Skill Creator meta-skill, automated testing and improvement | 2026-04-13 |
 
 ## Syntheses
 
@@ -104,12 +110,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 74
-- **Concepts**: 37
-- **Entities**: 26
-- **Summaries**: 10
+- **Total pages**: 80
+- **Concepts**: 40
+- **Entities**: 28
+- **Summaries**: 11
 - **Syntheses**: 0
-- **Sources ingested**: 10
-- **High confidence**: 64
+- **Sources ingested**: 11
+- **High confidence**: 70
 - **Medium confidence**: 4
 - **Low confidence**: 6
