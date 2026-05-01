@@ -253,3 +253,54 @@ Each entry follows this format:
   - Total corpus: 11 sources ingested (1 today + 10 previous)
   - Wiki statistics: 80 total pages (40 concepts, 28 entities, 11 summaries, 0 syntheses)
   - High confidence: 70, Medium confidence: 4, Low confidence: 6
+
+---
+
+### 2026-05-01 — Ingest | PostgreSQL, LangChain, and LangGraph infrastructure sources
+
+- **Source/Trigger**: Ingested raw/A local environment for PostgreSQL with Docker Compose.md, raw/LangGraph Checkpoint Postgres.md, raw/langchain-custom-middleware.md, raw/langchain-middleare-overview.md
+- **Pages created**:
+  - **Summaries (4)**: postgres-docker-compose-tutorial.md, langgraph-checkpoint-postgres.md, langchain-custom-middleware.md, langchain-middleware-overview.md
+  - **Concepts (8)**: docker-compose.md, database-initialization.md, langgraph.md, checkpoint-persistence.md, middleware-pattern.md, hooks.md, state-reducers.md, langchain-agents.md
+  - **Entities (7)**: postgresql.md, pgadmin.md, metabase.md, dbeaver.md, docker.md, langchain.md, christophe-vaudry.md
+- **Pages updated**: 
+  - index.md (added 19 new pages to catalog, updated statistics)
+  - log.md (this entry)
+- **Notes**:
+  - **New domain**: First sources covering infrastructure (Docker/PostgreSQL) and LangChain agent framework - expands beyond LLM Wiki pattern and AutoResearch
+  - **PostgreSQL Docker tutorial** provides complete development environment setup with database initialization patterns, multiple admin tools (pgAdmin, Metabase, DBeaver), and Docker Compose best practices
+  - **LangGraph Checkpoint Postgres** documents official PostgreSQL persistence backend for LangGraph agents:
+    - Dual sync/async implementations (`PostgresSaver` / `AsyncPostgresSaver`)
+    - Long-term memory support via `PostgresStore` with pgvector
+    - Shallow mode option for lightweight state-only persistence
+    - Production-ready, officially maintained by LangChain
+    - Limitation: no native API for checkpoint cleanup
+  - **LangChain middleware system** introduces powerful agent customization mechanism:
+    - Two hook styles: node-style (sequential) and wrap-style (control flow)
+    - Four node hooks: `before_agent`, `before_model`, `after_model`, `after_agent`
+    - Two wrap hooks: `wrap_model_call`, `wrap_tool_call`
+    - State extension via custom schemas
+    - Agent jumps for early termination
+    - Execution order: before (1→2→3), wrap (nested), after (3→2→1)
+    - Command composition for state updates with reducers
+  - **Key architectural patterns identified**:
+    - **Docker Compose**: Infrastructure-as-code for multi-container development environments
+    - **Database initialization**: Automated schema/data setup via container startup hooks
+    - **Middleware pattern**: Cross-cutting concerns via lifecycle hooks
+    - **State reducers**: Predictable state merging when multiple sources update
+    - **Checkpoint persistence**: Agent state saved for crash recovery and time-travel
+  - **LangChain agent framework documented**: Core loop (model → tool selection → execution → repeat), created via `create_agent()`, supports middleware for logging/retries/guardrails/transformations
+  - **Cross-wiki connections**:
+    - Docker/PostgreSQL setup enables LangGraph checkpoint storage
+    - Middleware pattern applicable to agent frameworks generally (LangChain specific implementation)
+    - Database initialization pattern mirrors agent state initialization
+    - Hooks concept generalizes beyond LangChain to extensibility patterns
+  - **Tool ecosystem expansion**: PostgreSQL admin tools (pgAdmin, Metabase, DBeaver) complement Obsidian tools from earlier sources
+  - **Production readiness theme**: These sources focus on reliability (checkpointing, retries), scalability (async, connection pooling), and observability (middleware logging)
+  - **No contradictions found**: Infrastructure sources complement rather than conflict with knowledge management sources
+  - **Confidence levels**: 
+    - 18 new pages high confidence (well-documented with code examples and official docs)
+    - 1 new page medium confidence (christophe-vaudry - limited biographical info)
+  - Total corpus: 15 sources ingested (4 today + 11 previous)
+  - Wiki statistics: 99 total pages (48 concepts, 35 entities, 15 summaries, 0 syntheses)
+  - High confidence: 97, Medium confidence: 5, Low confidence: 6

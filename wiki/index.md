@@ -52,6 +52,14 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/claude-skills]] | claude-code, foundational, automation, instructions, workflow | high | 2026-04-13 |
 | [[concepts/meta-skills]] | claude-code, meta-programming, automation, self-improvement, advanced | high | 2026-04-13 |
 | [[concepts/skill-testing]] | claude-code, testing, quality-assurance, automation, evaluation | high | 2026-04-13 |
+| [[concepts/docker-compose]] | docker, containers, infrastructure-as-code, development-environment, orchestration | high | 2026-05-01 |
+| [[concepts/database-initialization]] | databases, automation, devops, postgresql, schema-management | high | 2026-05-01 |
+| [[concepts/langgraph]] | langchain, agents, graph, workflow, state-management, orchestration | high | 2026-05-01 |
+| [[concepts/checkpoint-persistence]] | langgraph, state-management, persistence, reliability, crash-recovery | high | 2026-05-01 |
+| [[concepts/middleware-pattern]] | design-patterns, agents, interception, cross-cutting-concerns, langchain | high | 2026-05-01 |
+| [[concepts/hooks]] | design-patterns, lifecycle, callbacks, interception, extensibility | high | 2026-05-01 |
+| [[concepts/state-reducers]] | state-management, functional-programming, data-structures, agents, langgraph | high | 2026-05-01 |
+| [[concepts/langchain-agents]] | langchain, agents, llm, tools, orchestration, reasoning | high | 2026-05-01 |
 
 ## Entities
 
@@ -85,6 +93,13 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/vercel]] | companies, hosting, web-development, infrastructure | 2026-04-12 |
 | [[entities/nick-babich]] | people, content-creator, ai-education, claude-code, ux-design | 2026-04-13 |
 | [[entities/skill-creator]] | tools, meta-skills, claude-code, automation, code-generation | 2026-04-13 |
+| [[entities/postgresql]] | database, relational, sql, open-source | 2026-05-01 |
+| [[entities/pgadmin]] | database-tools, postgresql, gui, administration | 2026-05-01 |
+| [[entities/metabase]] | business-intelligence, analytics, visualization, database-tools | 2026-05-01 |
+| [[entities/dbeaver]] | database-tools, gui, multi-database, open-source | 2026-05-01 |
+| [[entities/docker]] | containers, infrastructure, devops, platform | 2026-05-01 |
+| [[entities/langchain]] | ai-framework, agents, llm, python, typescript, orchestration | 2026-05-01 |
+| [[entities/christophe-vaudry]] | people, developer, content-creator | 2026-05-01 |
 
 ## Summaries
 
@@ -101,6 +116,10 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/obsidian-cli-command-reference]] | raw/Obsidian 官方 CLI 命令全景速查表.md | Complete CLI command catalog, automation workflows, 25+ functional modules | 2026-04-12 |
 | [[summaries/obsidian-essential-skills]] | raw/Obsidian 必装 Skills.md | Essential Skills catalog, CLI vs file I/O, plugins, installation methods | 2026-04-12 |
 | [[summaries/claude-skills-2-skill-creator]] | raw/claude-skills-2-how-to-use-skill-creator.md | Skills 2.0 methodology, Skill Creator meta-skill, automated testing and improvement | 2026-04-13 |
+| [[summaries/postgres-docker-compose-tutorial]] | raw/A local environment for PostgreSQL with Docker Compose.md | Docker Compose PostgreSQL environment, pgAdmin, Metabase, DBeaver, initialization | 2026-05-01 |
+| [[summaries/langgraph-checkpoint-postgres]] | raw/LangGraph Checkpoint Postgres.md | PostgreSQL checkpoint implementation, sync/async savers, Store, shallow mode | 2026-05-01 |
+| [[summaries/langchain-custom-middleware]] | raw/langchain-custom-middleware.md | Custom middleware, node/wrap hooks, state extension, dynamic prompts | 2026-05-01 |
+| [[summaries/langchain-middleware-overview]] | raw/langchain-middleare-overview.md | Middleware overview, agent loop, hook points, built-in middleware | 2026-05-01 |
 
 ## Syntheses
 
@@ -110,12 +129,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 80
-- **Concepts**: 40
-- **Entities**: 28
-- **Summaries**: 11
+- **Total pages**: 99
+- **Concepts**: 48
+- **Entities**: 35
+- **Summaries**: 15
 - **Syntheses**: 0
-- **Sources ingested**: 11
-- **High confidence**: 70
-- **Medium confidence**: 4
+- **Sources ingested**: 15
+- **High confidence**: 97
+- **Medium confidence**: 5
 - **Low confidence**: 6
