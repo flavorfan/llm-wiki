@@ -1,10 +1,10 @@
 ---
 title: "Hooks"
 type: concept
-tags: [design-patterns, lifecycle, callbacks, interception, extensibility]
+tags: [design-patterns, lifecycle, callbacks, interception, extensibility, automation, claude-code]
 created: 2026-05-01
-updated: 2026-05-01
-sources: ["raw/langchain-custom-middleware.md"]
+updated: 2026-05-04
+sources: ["raw/langchain-custom-middleware.md", "raw/Hooks reference.md", "raw/Stop Writing Bad CLAUDE.md Files.md"]
 confidence: high
 ---
 
@@ -20,6 +20,14 @@ Hooks are predefined callback points in a program's execution flow where custom 
 3. **Automatic invocation**: Framework calls registered handlers when reaching hook points
 4. **Pass context**: Framework provides relevant state/data to handler
 5. **Process results**: Handlers can return values to modify execution flow
+
+**Claude Code hooks:**
+- **Event-driven**: Hooks fire at specific lifecycle points (session start, tool use, prompt submit, etc.)
+- **Five handler types**: Command (shell), HTTP (POST endpoint), MCP tool, Prompt (LLM), Agent (subagent)
+- **JSON communication**: Input via stdin/POST body, output via exit codes and JSON stdout
+- **Decision control**: Hooks can allow, deny, block, or inject context based on exit codes and JSON output
+- **Matchers**: Filter hooks by tool name, event type, command name, or file paths (glob/regex patterns)
+- **Three-level config**: Event → Matcher group → Handler(s)
 
 **LangChain agent hooks:**
 - **Node-style**: Sequential callbacks at fixed points (`before_model`, `after_model`)
@@ -41,6 +49,7 @@ Hooks are predefined callback points in a program's execution flow where custom 
 
 ## When To Use
 
+**General use cases:**
 - **Framework extensibility**: Allow users to customize behavior without forking code
 - **Plugin systems**: Third-party integrations via well-defined extension points
 - **Cross-cutting concerns**: Logging, metrics, caching applicable to many operations
@@ -48,6 +57,15 @@ Hooks are predefined callback points in a program's execution flow where custom 
 - **Configuration**: Runtime behavior changes without code modifications
 - **Migration**: Gradual feature rollout via feature flags in hooks
 - **Observability**: Instrument existing systems without invasive changes
+
+**Claude Code specific (replace CLAUDE.md instructions):**
+- **Code formatting**: PostToolUse hook runs linters/formatters after Edit/Write instead of style instructions
+- **Environment setup**: SessionStart hook loads context, sets environment variables
+- **Security validation**: PreToolUse hook validates Bash commands before execution
+- **Policy enforcement**: PermissionRequest hook auto-approves/denies based on rules
+- **Context injection**: Hooks add dynamic context (current branch, open issues, test results) without static instructions
+- **Reactive automation**: FileChanged hook triggers when watched files change
+- **Custom workflows**: Stop hook runs before Claude finishes turn (tests, validation, documentation generation)
 
 ## Risks & Pitfalls
 
@@ -63,12 +81,16 @@ Hooks are predefined callback points in a program's execution flow where custom 
 ## Related Concepts
 
 - [[concepts/middleware-pattern]] - Hooks as implementation mechanism for middleware
-- [[concepts/callback-pattern]] - General callback concept
+- [[concepts/code-style-automation]] - Using PostToolUse hooks for formatting
+- [[concepts/claude-md-configuration]] - Hooks as alternative to instructions
+- [[concepts/instruction-following-limits]] - Why hooks are better than instructions for enforcement
 - [[concepts/event-driven-architecture]] - Event-based hook systems
-- [[concepts/plugin-architecture]] - Extensibility via plugins using hooks
-- [[concepts/aspect-oriented-programming]] - Similar to around/wrap hooks
-- [[concepts/lifecycle-methods]] - React/framework lifecycle as hook examples
+- [[concepts/lifecycle-events]] - Session, turn, and tool lifecycle
+- [[concepts/permission-system]] - PermissionRequest/PermissionDenied hooks
+- [[concepts/context-injection]] - Adding dynamic context via hooks
 
 ## Sources
 
 - raw/langchain-custom-middleware.md - LangChain middleware hooks (node-style and wrap-style)
+- raw/Hooks reference.md - Claude Code comprehensive hook reference
+- raw/Stop Writing Bad CLAUDE.md Files.md - PostToolUse hooks for formatting example

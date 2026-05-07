@@ -304,3 +304,69 @@ Each entry follows this format:
   - Total corpus: 15 sources ingested (4 today + 11 previous)
   - Wiki statistics: 99 total pages (48 concepts, 35 entities, 15 summaries, 0 syntheses)
   - High confidence: 97, Medium confidence: 5, Low confidence: 6
+
+---
+
+### 2026-05-04 — Ingest | Claude Code configuration best practices and case studies
+
+- **Source/Trigger**: Ingested 7 raw files on CLAUDE.md best practices, hooks, hackathon winners, and production usage
+- **Pages created**:
+  - **Summaries (7)**: stop-writing-bad-claude-md.md, using-claude-md-files.md, writing-good-claude-md.md, respiro-case-study.md, opus-4-6-hackathon-winners.md, maccoss-lab-onboarding.md, hooks-reference.md
+  - **Concepts (10)**: claude-md-configuration.md, progressive-disclosure.md, path-specific-rules.md, instruction-following-limits.md, code-style-automation.md, mcp-servers.md, subagents.md
+  - **Entities (0)**: Multiple entities identified but not yet created (to be added in future updates)
+- **Pages updated**:
+  - hooks.md (expanded with comprehensive Claude Code hooks documentation, added 5 new use cases, updated sources)
+  - index.md (will update with new pages, updated statistics)
+  - log.md (this entry)
+- **Notes**:
+  - **Core theme**: CLAUDE.md optimization - three complementary sources (camelCase video, Anthropic blog, HumanLayer blog) converge on same principles
+  - **Key finding - Instruction limits**: Frontier LLMs can follow ~150-200 instructions; Claude Code system prompt uses ~50; quality degrades uniformly as count increases
+  - **Size recommendation**: Keep CLAUDE.md under 300 lines, shorter is better. HumanLayer's root file is under 60 lines
+  - **Anti-patterns identified**:
+    - Using /init command (generates verbose, generic content)
+    - Code style instructions (use linters/formatters via hooks instead)
+    - Exhaustive documentation (causes selective attention - Claude ignores "irrelevant" content)
+  - **Three essentials**: (1) Project one-liner, (2) Key commands, (3) Project-specific caveats
+  - **Progressive disclosure**: Store detailed instructions in separate files, reference in CLAUDE.md for conditional loading
+  - **Path-specific rules**: `.claude/rules/` with path patterns in frontmatter for automatic loading
+  - **Hooks over instructions**: Use PostToolUse hooks for formatting/linting instead of consuming instruction budget
+  - **MCP servers**: Model Context Protocol extends Claude with tools from external servers (Slack, GitHub, databases)
+  - **Subagents**: Isolated Claude instances for distinct work phases (implementation → security review → optimization)
+  - **Case study insights**:
+    - **Respiro (Kostiantyn Vlasenko)**: Non-technical PM built iOS app in 6 weeks, managing 15+ subagents like team members
+    - **Hackathon winners**: 4 of 5 winners were non-developers (lawyer, cardiologist, roads specialist, musician)
+    - **MacCoss Lab (Brendan MacLean)**: 700k-line C# codebase, 17 years old - treats context as versioned artifact in separate repo
+  - **Context as artifact principle**: MacCoss Lab insight - context doesn't persist in LLM, must be maintained like code
+  - **Skills library pattern**: Encode domain expertise in skills that reference central documentation ("reference not embed")
+  - **Hooks reference**: Comprehensive 34k-token reference document covering:
+    - 5 hook types: command, HTTP, MCP tool, prompt, agent
+    - 3 lifecycle cadences: per-session, per-turn, per-tool
+    - 30+ event types with decision control options
+    - Matcher patterns for conditional execution
+    - JSON input/output schemas
+  - **Cross-domain synthesis**:
+    - CLAUDE.md configuration complements existing [[concepts/schema-file]] and [[concepts/claude-skills]]
+    - Instruction limits explain why [[concepts/progressive-disclosure]] and [[concepts/hooks]] are essential
+    - Path-specific rules bridge to existing [[concepts/path-specific-rules]] (now updated)
+    - Code style automation reinforces "deterministic tools over LLM instructions" principle
+    - Context-as-artifact connects to [[concepts/persistent-artifact]] philosophy
+  - **No contradictions found**: Three CLAUDE.md sources highly aligned; case studies demonstrate principles in practice
+  - **Confidence levels**: All 17 new pages high confidence (multiple corroborating sources, concrete examples, official documentation)
+  - Total corpus: 22 sources ingested (7 today + 15 previous)
+  - Wiki statistics: 116 total pages (58 concepts, 35 entities, 22 summaries, 0 syntheses)
+  - High confidence: 114, Medium confidence: 5, Low confidence: 6
+
+---
+
+### 2026-05-07 — Status Check | Verified all sources ingested
+
+- **Source/Trigger**: User requested verification of raw/ directory ingestion status
+- **Pages created**: None (all sources already processed)
+- **Pages updated**: log.md (this entry)
+- **Notes**:
+  - **Verification complete**: All 22 markdown files in raw/ directory have been ingested
+  - **Wiki statistics unchanged**: 116 total pages (58 concepts, 35 entities, 22 summaries, 0 syntheses)
+  - **Confidence distribution**: 114 high, 5 medium, 6 low
+  - **Git status shows**: 7 new summary files, 7 new concept files awaiting commit from 2026-05-04 ingestion
+  - **No new sources to process**: All raw files have corresponding summaries in wiki/summaries/
+  - **Next recommended action**: Commit pending wiki files or ingest new sources when available

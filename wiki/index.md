@@ -1,7 +1,7 @@
 ---
 title: "Knowledge Base Index"
 type: index
-updated: 2026-04-12
+updated: 2026-05-04
 ---
 
 # Knowledge Base Index
@@ -60,6 +60,13 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/hooks]] | design-patterns, lifecycle, callbacks, interception, extensibility | high | 2026-05-01 |
 | [[concepts/state-reducers]] | state-management, functional-programming, data-structures, agents, langgraph | high | 2026-05-01 |
 | [[concepts/langchain-agents]] | langchain, agents, llm, tools, orchestration, reasoning | high | 2026-05-01 |
+| [[concepts/claude-md-configuration]] | claude-code, configuration, best-practices, foundational, llm-agents | high | 2026-05-04 |
+| [[concepts/progressive-disclosure]] | context-engineering, claude-code, best-practices, token-optimization, foundational | high | 2026-05-04 |
+| [[concepts/path-specific-rules]] | claude-code, automation, configuration, context-engineering, advanced | high | 2026-05-04 |
+| [[concepts/instruction-following-limits]] | llm-research, limitations, foundational, prompt-engineering, context-engineering | high | 2026-05-04 |
+| [[concepts/code-style-automation]] | best-practices, tools, automation, linting, formatting, deterministic | high | 2026-05-04 |
+| [[concepts/mcp-servers]] | mcp, claude-code, tools, integration, protocol, foundational | high | 2026-05-04 |
+| [[concepts/subagents]] | claude-code, agents, context-isolation, workflow, foundational | high | 2026-05-04 |
 
 ## Entities
 
@@ -120,6 +127,13 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/langgraph-checkpoint-postgres]] | raw/LangGraph Checkpoint Postgres.md | PostgreSQL checkpoint implementation, sync/async savers, Store, shallow mode | 2026-05-01 |
 | [[summaries/langchain-custom-middleware]] | raw/langchain-custom-middleware.md | Custom middleware, node/wrap hooks, state extension, dynamic prompts | 2026-05-01 |
 | [[summaries/langchain-middleware-overview]] | raw/langchain-middleare-overview.md | Middleware overview, agent loop, hook points, built-in middleware | 2026-05-01 |
+| [[summaries/stop-writing-bad-claude-md]] | raw/Stop Writing Bad CLAUDE.md Files.md | Size limits, avoid /init, progressive disclosure, hooks automation | 2026-05-04 |
+| [[summaries/using-claude-md-files]] | raw/Using CLAUDE.MD files Customizing Claude Code for your codebase.md | Official guide, /init command, workflows, MCP integration, custom commands | 2026-05-04 |
+| [[summaries/writing-good-claude-md]] | raw/Writing a good CLAUDE.md | Stateless LLMs, instruction limits, progressive disclosure, 12-factor-agents | 2026-05-04 |
+| [[summaries/respiro-case-study]] | raw/How a non-technical project manager built and shipped a stress management app with Claude Code in six weeks.md | Non-technical builder, 6-week timeline, 15+ subagents, vision capabilities | 2026-05-04 |
+| [[summaries/opus-4-6-hackathon-winners]] | raw/Meet the winners of our Built with Opus 4.6 Claude Code hackathon.md | 5 winners, 4 non-developers, housing permits, visual IDE, healthcare, infrastructure | 2026-05-04 |
+| [[summaries/maccoss-lab-onboarding]] | raw/Onboarding Claude Code like a new developer Lessons from 17 years of development.md | 700k-line codebase, context as artifact, skill libraries, separate repo | 2026-05-04 |
+| [[summaries/hooks-reference]] | raw/Hooks reference.md | Comprehensive hooks reference, 5 types, 30+ events, JSON schemas | 2026-05-04 |
 
 ## Syntheses
 
@@ -129,12 +143,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 99
-- **Concepts**: 48
+- **Total pages**: 116
+- **Concepts**: 55
 - **Entities**: 35
-- **Summaries**: 15
+- **Summaries**: 22
 - **Syntheses**: 0
-- **Sources ingested**: 15
-- **High confidence**: 97
+- **Sources ingested**: 22
+- **High confidence**: 114
 - **Medium confidence**: 5
 - **Low confidence**: 6
