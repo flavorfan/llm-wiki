@@ -1,7 +1,7 @@
 ---
 title: "Knowledge Base Index"
 type: index
-updated: 2026-05-04
+updated: 2026-05-10
 ---
 
 # Knowledge Base Index
@@ -67,6 +67,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/code-style-automation]] | best-practices, tools, automation, linting, formatting, deterministic | high | 2026-05-04 |
 | [[concepts/mcp-servers]] | mcp, claude-code, tools, integration, protocol, foundational | high | 2026-05-04 |
 | [[concepts/subagents]] | claude-code, agents, context-isolation, workflow, foundational | high | 2026-05-04 |
+| [[concepts/on-behalf-of-flow]] | oauth, authentication, security, token-delegation, microsoft-entra, foundational | high | 2026-05-10 |
+| [[concepts/user-identity-preservation]] | security, identity, authentication, multi-agent, rbac, foundational | high | 2026-05-10 |
+| [[concepts/human-in-the-loop]] | ai-safety, approval-workflows, agents, security, guardrails, foundational | high | 2026-05-10 |
+| [[concepts/zero-trust-agents]] | security, zero-trust, ai-agents, rbac, foundational, enterprise | high | 2026-05-10 |
+| [[concepts/token-audience]] | oauth, jwt, security, authentication, configuration, foundational | high | 2026-05-10 |
+| [[concepts/agent-isolation]] | security, agents, multi-tenancy, architecture, foundational | high | 2026-05-10 |
 
 ## Entities
 
@@ -107,6 +113,13 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/docker]] | containers, infrastructure, devops, platform | 2026-05-01 |
 | [[entities/langchain]] | ai-framework, agents, llm, python, typescript, orchestration | 2026-05-01 |
 | [[entities/christophe-vaudry]] | people, developer, content-creator | 2026-05-01 |
+| [[entities/microsoft-entra-id]] | identity, microsoft, azure, oauth, authentication, enterprise | 2026-05-10 |
+| [[entities/chainlit]] | python, llm-ui, web-framework, oauth, conversational-ai | 2026-05-10 |
+| [[entities/databricks-genie]] | databricks, natural-language, sql, agents, azure, ai-tools | 2026-05-10 |
+| [[entities/azure-cosmos-db]] | database, azure, nosql, distributed, microsoft | 2026-05-10 |
+| [[entities/msal]] | authentication, microsoft, oauth, library, python, security | 2026-05-10 |
+| [[entities/azure-app-service]] | azure, hosting, paas, web-apps, microsoft | 2026-05-10 |
+| [[entities/charles-chukwudozie]] | people, microsoft, azure, ai-engineering, content-creator | 2026-05-10 |
 
 ## Summaries
 
@@ -134,6 +147,7 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/opus-4-6-hackathon-winners]] | raw/Meet the winners of our Built with Opus 4.6 Claude Code hackathon.md | 5 winners, 4 non-developers, housing permits, visual IDE, healthcare, infrastructure | 2026-05-04 |
 | [[summaries/maccoss-lab-onboarding]] | raw/Onboarding Claude Code like a new developer Lessons from 17 years of development.md | 700k-line codebase, context as artifact, skill libraries, separate repo | 2026-05-04 |
 | [[summaries/hooks-reference]] | raw/Hooks reference.md | Comprehensive hooks reference, 5 types, 30+ events, JSON schemas | 2026-05-04 |
+| [[summaries/securing-multi-agent-on-behalf-of]] | Clippings/Securing A Multi-Agent AI Solution Focused on User Context & the Complexities of On-Behalf-Of.md | OBO flow, user identity preservation, zero-trust agents, HITL, Chainlit + LangGraph + Databricks | 2026-05-10 |
 
 ## Syntheses
 
@@ -143,12 +157,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 112
-- **Concepts**: 55
-- **Entities**: 35
-- **Summaries**: 22
+- **Total pages**: 126
+- **Concepts**: 61
+- **Entities**: 42
+- **Summaries**: 23
 - **Syntheses**: 0
-- **Sources ingested**: 22
-- **High confidence**: 114
-- **Medium confidence**: 5
+- **Sources ingested**: 23
+- **High confidence**: 127
+- **Medium confidence**: 6
 - **Low confidence**: 6
