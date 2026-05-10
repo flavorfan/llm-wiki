@@ -143,7 +143,7 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 116
+- **Total pages**: 112
 - **Concepts**: 55
 - **Entities**: 35
 - **Summaries**: 22
