@@ -73,6 +73,15 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/zero-trust-agents]] | security, zero-trust, ai-agents, rbac, foundational, enterprise | high | 2026-05-10 |
 | [[concepts/token-audience]] | oauth, jwt, security, authentication, configuration, foundational | high | 2026-05-10 |
 | [[concepts/agent-isolation]] | security, agents, multi-tenancy, architecture, foundational | high | 2026-05-10 |
+| [[concepts/loopiness-framework]] | llm-evolution, foundational, autonomous-agents, architecture, historical | high | 2026-05-15 |
+| [[concepts/sessions-as-processes]] | architecture, autonomous-agents, openclaw, foundational, operating-systems | high | 2026-05-15 |
+| [[concepts/gateway-controller]] | architecture, openclaw, middleware, autonomous-agents, foundational | high | 2026-05-15 |
+| [[concepts/cron-scheduling]] | automation, time-management, openclaw, autonomous-agents, foundational | high | 2026-05-15 |
+| [[concepts/heartbeat-monitoring]] | monitoring, autonomous-agents, openclaw, reliability, foundational | high | 2026-05-15 |
+| [[concepts/skills-architecture]] | skills, openclaw, claude-code, agent-capabilities, foundational | high | 2026-05-15 |
+| [[concepts/self-bootstrapping]] | autonomous-agents, openclaw, initialization, self-configuration, foundational | high | 2026-05-15 |
+| [[concepts/discord-hub-pattern]] | ui-patterns, openclaw, context-management, best-practices, organizational | high | 2026-05-15 |
+| [[concepts/strange-loops]] | philosophy, self-reference, autonomous-agents, emerging, advanced | high | 2026-05-15 |
 
 ## Entities
 
@@ -120,6 +129,8 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/msal]] | authentication, microsoft, oauth, library, python, security | 2026-05-10 |
 | [[entities/azure-app-service]] | azure, hosting, paas, web-apps, microsoft | 2026-05-10 |
 | [[entities/charles-chukwudozie]] | people, microsoft, azure, ai-engineering, content-creator | 2026-05-10 |
+| [[entities/alex-krentsel]] | people, researcher, berkeley, autonomous-agents, openclaw | 2026-05-15 |
+| [[entities/openclaw]] | tools, autonomous-agents, open-source, emerging, platform | 2026-05-15 |
 
 ## Summaries
 
@@ -148,6 +159,7 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/maccoss-lab-onboarding]] | raw/Onboarding Claude Code like a new developer Lessons from 17 years of development.md | 700k-line codebase, context as artifact, skill libraries, separate repo | 2026-05-04 |
 | [[summaries/hooks-reference]] | raw/Hooks reference.md | Comprehensive hooks reference, 5 types, 30+ events, JSON schemas | 2026-05-04 |
 | [[summaries/securing-multi-agent-on-behalf-of]] | Clippings/Securing A Multi-Agent AI Solution Focused on User Context & the Complexities of On-Behalf-Of.md | OBO flow, user identity preservation, zero-trust agents, HITL, Chainlit + LangGraph + Databricks | 2026-05-10 |
+| [[summaries/openclaw-deep-dive]] | raw/Principles for Autonomous System Design OpenClaw Deep Dive.md | Loopiness framework, OpenClaw architecture, sessions-as-processes, cron+heartbeat, skills, self-bootstrapping | 2026-05-15 |
 
 ## Syntheses
 
@@ -157,12 +169,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 126
-- **Concepts**: 61
-- **Entities**: 42
-- **Summaries**: 23
+- **Total pages**: 136
+- **Concepts**: 73
+- **Entities**: 44
+- **Summaries**: 24
 - **Syntheses**: 0
-- **Sources ingested**: 23
-- **High confidence**: 127
-- **Medium confidence**: 6
+- **Sources ingested**: 24
+- **High confidence**: 134
+- **Medium confidence**: 5
 - **Low confidence**: 6

@@ -373,6 +373,33 @@ Each entry follows this format:
 
 ---
 
+### 2026-05-10 — Ingest | Securing Multi-Agent AI Systems (On-Behalf-Of flow)
+
+- **Source/Trigger**: Ingested Clippings/Securing A Multi-Agent AI Solution Focused on User Context & the Complexities of On-Behalf-Of.md
+- **Pages created**:
+  - **Summaries (1)**: securing-multi-agent-on-behalf-of.md
+  - **Concepts (6)**: on-behalf-of-flow.md, user-identity-preservation.md, human-in-the-loop.md, zero-trust-agents.md, token-audience.md, agent-isolation.md
+  - **Entities (6)**: microsoft-entra-id.md, chainlit.md, databricks-genie.md, azure-cosmos-db.md, msal.md, azure-app-service.md, charles-chukwudozie.md
+- **Pages updated**:
+  - index.md (added 13 new pages to catalog, updated statistics)
+  - log.md (this entry)
+- **Notes**:
+  - **New domain**: First source on enterprise security architecture for multi-agent AI systems - expands into identity, authentication, and zero-trust principles
+  - **Core innovation**: On-Behalf-Of (OBO) flow preserves user identity through delegation chain (user → Chainlit → LangGraph agents → Databricks Genie)
+  - **Architecture**: Azure-based stack with Entra ID, Chainlit UI (FastAPI/MSAL), LangGraph orchestration, Databricks Genie (natural language SQL), Cosmos DB state storage
+  - **Security patterns documented**:
+    - Token audience validation (who should process token)
+    - Human-in-the-loop approval workflows (4 approval types)
+    - Zero-trust agent design (least privilege, identity preservation)
+    - Agent isolation (no shared credentials)
+  - **Integration challenges**: Databricks Genie doesn't natively support OBO, requires custom extension pattern
+  - **Cross-domain connections**: Relates to [[concepts/sessions-as-processes]] (session isolation), [[concepts/langchain-agents]] (orchestration framework), [[concepts/autonomous-agents]] (security constraints)
+  - **Confidence levels**: All 13 new pages high confidence (detailed implementation with code examples and architecture diagrams)
+  - Total corpus: 23 sources ingested (1 today + 22 previous)
+  - Wiki statistics: 125 total pages (64 concepts, 42 entities, 23 summaries, 0 syntheses)
+
+---
+
 ### 2026-05-10 — Lint | Wiki health check and statistics correction
 
 - **Source/Trigger**: User requested lint operation
@@ -437,3 +464,41 @@ Each entry follows this format:
   - Run lint again after each major ingestion to catch any issues
   - Consider creating first synthesis page when multiple related concepts have been developed
 - **No contradictions found**: Wiki content remains internally consistent across all updates
+
+---
+
+### 2026-05-15 — Ingest | OpenClaw Deep Dive on Autonomous System Design
+
+- **Source/Trigger**: Ingested raw/Principles for Autonomous System Design OpenClaw Deep Dive.md (YouTube video transcript)
+- **Pages created**:
+  - **Summaries (1)**: openclaw-deep-dive.md
+  - **Concepts (9)**: loopiness-framework.md, sessions-as-processes.md, gateway-controller.md, cron-scheduling.md, heartbeat-monitoring.md, skills-architecture.md, self-bootstrapping.md, discord-hub-pattern.md, strange-loops.md
+  - **Entities (2)**: alex-krentsel.md, openclaw.md
+- **Pages updated**:
+  - index.md (added 12 new pages to catalog, updated statistics)
+  - log.md (this entry)
+- **Notes**:
+  - **New domain**: Academic deep-dive into autonomous agent architecture - first comprehensive analysis of Phase 3 agent design principles
+  - **Loopiness Framework**: Traces LLM evolution through 4 phases from next-token predictors to autonomous agents with self-modification capability
+  - **OpenClaw Architecture**: Three-layer system (Connectors → Gateway Controller → Agent Runtime) analyzed in detail
+  - **Core innovation**: Sessions-as-processes abstraction (sessions=processes, agents=threads) provides OS-level mental model for autonomous systems
+  - **Time management breakthrough**: Dual mechanism (cron for predictable, heartbeat for unpredictable) enables temporal autonomy
+  - **Skills over MCP**: Text-based skills with 3-tier progressive disclosure (header→body→linked-files) winning over MCP servers due to ease of authoring
+  - **Self-bootstrapping**: Agent autonomously discovers user identity via web research, writes own configuration files (soul.md, user.md, agents.md)
+  - **Discord Hub Pattern**: Multi-channel organization where each channel maps to isolated session, superior to single-thread interfaces
+  - **Strange Loops**: Self-referential architecture where agent modifies its own configuration through LLM reasoning, enabling recursive improvement
+  - **Case studies documented**:
+    - Autonomous website deployment (EC2 VM provisioning, coding, testing, public deployment - zero human intervention)
+    - ML inference optimization (reproducing research experiments with remote GPU orchestration)
+    - YouTube channel automation (31+ educational videos generated with Manim animations, OpenAI TTS, autonomous upload)
+  - **Design insight**: "Code quality is dead, design abstractions matter" - OpenClaw code is "gross" but architecture is excellent
+  - **Speaker context**: Alex Krentsel (UC Berkeley PhD, NetSys Lab) - networking researcher analyzing from systems perspective
+  - **Cross-domain connections**:
+    - Extends [[concepts/autonomous-agents]] with concrete architectural patterns
+    - Complements [[concepts/claude-skills]] with OpenClaw's skills-architecture implementation
+    - Relates to [[concepts/langchain-agents]] as alternative Phase 3 approach
+    - Builds on [[concepts/sessions-as-processes]] abstraction (now fully documented)
+  - **Confidence levels**: All 12 new pages high confidence (1-hour detailed technical presentation with code examples and live demonstrations)
+  - Total corpus: 24 sources ingested (1 today + 23 previous)
+  - Wiki statistics: 136 total pages (73 concepts, 44 entities, 24 summaries, 0 syntheses)
+  - High confidence: 134, Medium confidence: 5, Low confidence: 6
