@@ -1,7 +1,7 @@
 ---
 title: "Knowledge Base Index"
 type: index
-updated: 2026-05-10
+updated: 2026-05-26
 ---
 
 # Knowledge Base Index
@@ -82,6 +82,13 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[concepts/self-bootstrapping]] | autonomous-agents, openclaw, initialization, self-configuration, foundational | high | 2026-05-15 |
 | [[concepts/discord-hub-pattern]] | ui-patterns, openclaw, context-management, best-practices, organizational | high | 2026-05-15 |
 | [[concepts/strange-loops]] | philosophy, self-reference, autonomous-agents, emerging, advanced | high | 2026-05-15 |
+| [[concepts/prompt-engineering]] | prompt-engineering, llm-agents, ai-coding, foundational, well-established | high | 2026-05-26 |
+| [[concepts/evaluation-frameworks]] | evaluation, testing, metrics, quality-assurance, methodology, foundational | high | 2026-05-26 |
+| [[concepts/agentic-loops]] | agents, workflow, autonomous-agents, multi-step-reasoning, design-patterns, well-established | high | 2026-05-26 |
+| [[concepts/tool-use-patterns]] | tools, prompting, capabilities, design-patterns, llm-agents, well-established | high | 2026-05-26 |
+| [[concepts/adaptive-thinking]] | reasoning, model-capabilities, inference, extended-computation, well-established | high | 2026-05-26 |
+| [[concepts/output-contracts]] | prompt-engineering, structured-output, consistency, specification, design-patterns | high | 2026-05-26 |
+| [[concepts/model-selection]] | model-capabilities, inference, performance, cost-optimization, trade-offs, foundational | high | 2026-05-26 |
 
 ## Entities
 
@@ -131,6 +138,7 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[entities/charles-chukwudozie]] | people, microsoft, azure, ai-engineering, content-creator | 2026-05-10 |
 | [[entities/alex-krentsel]] | people, researcher, berkeley, autonomous-agents, openclaw | 2026-05-15 |
 | [[entities/openclaw]] | tools, autonomous-agents, open-source, emerging, platform | 2026-05-15 |
+| [[entities/margot-vanlar]] | people, anthropic, ai-engineering, prompt-engineering, content-creator | 2026-05-26 |
 
 ## Summaries
 
@@ -160,6 +168,7 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 | [[summaries/hooks-reference]] | raw/Hooks reference.md | Comprehensive hooks reference, 5 types, 30+ events, JSON schemas | 2026-05-04 |
 | [[summaries/securing-multi-agent-on-behalf-of]] | Clippings/Securing A Multi-Agent AI Solution Focused on User Context & the Complexities of On-Behalf-Of.md | OBO flow, user identity preservation, zero-trust agents, HITL, Chainlit + LangGraph + Databricks | 2026-05-10 |
 | [[summaries/openclaw-deep-dive]] | raw/Principles for Autonomous System Design OpenClaw Deep Dive.md | Loopiness framework, OpenClaw architecture, sessions-as-processes, cron+heartbeat, skills, self-bootstrapping | 2026-05-15 |
+| [[summaries/the-prompting-playbook-zh]] | raw/The prompting playbook_zh.md | Prompt maintenance, agentic loops, evaluation frameworks, model selection, customer service bot, employee scheduling | 2026-05-26 |
 
 ## Syntheses
 
@@ -169,12 +178,12 @@ Master catalog of all wiki pages. Every page in the wiki must have an entry here
 
 ## Statistics
 
-- **Total pages**: 136
-- **Concepts**: 73
-- **Entities**: 44
-- **Summaries**: 24
+- **Total pages**: 144
+- **Concepts**: 80
+- **Entities**: 45
+- **Summaries**: 25
 - **Syntheses**: 0
-- **Sources ingested**: 24
+- **Sources ingested**: 25
 - **High confidence**: 134
 - **Medium confidence**: 5
 - **Low confidence**: 6

@@ -502,3 +502,65 @@ Each entry follows this format:
   - Total corpus: 24 sources ingested (1 today + 23 previous)
   - Wiki statistics: 136 total pages (73 concepts, 44 entities, 24 summaries, 0 syntheses)
   - High confidence: 134, Medium confidence: 5, Low confidence: 6
+
+---
+
+### 2026-05-26 — Ingest | The Prompting Playbook - Chinese translation
+
+- **Source/Trigger**: Ingested raw/The prompting playbook_zh.md (Margot Vanlar's conference talk transcript in Chinese)
+- **Pages created**:
+  - **Summaries (1)**: the-prompting-playbook-zh.md
+  - **Concepts (8)**: prompt-engineering.md, evaluation-frameworks.md, agentic-loops.md, tool-use-patterns.md, adaptive-thinking.md, output-contracts.md, model-selection.md
+  - **Entities (1)**: margot-vanlar.md
+- **Pages updated**:
+  - index.md (added 16 new pages to catalog, updated statistics to 144 total pages)
+  - log.md (this entry)
+- **Notes**:
+  - **New domain**: Practical prompt engineering methodology for production systems - complements [[concepts/autonomous-agents]] and [[concepts/claude-skills]] with concrete debugging/design patterns
+  - **Two core scenarios**:
+    1. **Maintaining existing prompts**: Customer service bot for telecom company (Meridian Mobile) - walk through fixing three failure modes
+    2. **Building new agentic systems**: Employee scheduling - compare five different approaches
+  - **Key innovation - General Hygiene First**: Simple restructuring (XML tags for sections) provides immediate performance boost before deep debugging
+    - Use [[concepts/evaluation-frameworks]] with 3 case types: control (should pass), edge cases (known failures), capability boundaries (when to refuse)
+    - If you can't distinguish sections in a prompt, neither can the model
+  - **Failure Mode 1 - Information Hiding**: Defensive instruction meant for older models causes new model to withhold accessible information
+    - Anti-pattern: "Never give wrong plan details" → model withholds correct information it has
+    - Fix: Balance instructions to show both costs AND benefits of decisions
+  - **Failure Mode 2 - Instructions Don't Add Capabilities**: "Always calculate accurately" doesn't improve mental math
+    - Solution: Provide actual [[concepts/tool-use-patterns]] (calculator function); model uses it reliably
+  - **Failure Mode 3 - Trade-off Imbalance**: Stating only cost of escalation causes over-optimization against escalation
+    - Fix: Present both sides of trade-offs; allow model to balance appropriately
+  - **Employee Scheduling Comparison**:
+    - Sonnet 4.6 (simple): 0/5 test cases pass
+    - Sonnet 4.6 (optimized): 2/5 pass (better but insufficient)
+    - Opus 4.7: 4/5 pass (much better, but only 1.5x cost/latency)
+    - Opus 4.7 + [[concepts/adaptive-thinking]]: 5/5 pass ✓ (but 3x tokens, 3x latency - expensive)
+    - **Agentic loop** (generate-evaluate-fix): 5/5 pass ✓✓ (with LESS tokens, LESS latency than Opus alone)
+  - **Agentic loop key insight**: Split complex task into 3 simple prompts (generator, evaluator, fixer) running sequentially outperforms single large prompt or expensive reasoning
+    - Lower tokens, lower latency, same/better quality
+    - Enables runtime soft constraints without system logic changes
+  - **Model Selection Framework**:
+    - Start small (Sonnet) + optimize prompting
+    - If insufficient, try adaptive thinking
+    - If still insufficient, upgrade model (Sonnet → Opus)
+    - Cost-latency tradeoffs: Agentic approach often beats pure model upgrade
+  - **Cross-domain connections**:
+    - Extends [[concepts/llm-knowledge-base|llm systems thinking]] to prompting specifically
+    - Provides concrete [[concepts/evaluation-frameworks]] methodology
+    - Documents [[concepts/agentic-loops]] pattern with real examples
+    - Clarifies [[concepts/tool-use-patterns]] principle: "instructions ≠ capabilities"
+    - Informs [[concepts/model-selection]] decisions
+    - Relates [[concepts/adaptive-thinking]] to cost-quality tradeoffs
+    - Combines [[concepts/prompt-engineering]], [[concepts/output-contracts]], and structured iteration
+  - **Speaker context**: Margot Vanlar - Applied AI Engineer at [[entities/anthropic]] London office, specializes in production prompt systems
+  - **Confidence levels**: All 8 new concept pages high confidence (detailed technical walkthrough with live web app demonstrations, systematic debugging process, cost/latency measurements)
+  - **Valuable anti-patterns documented**:
+    - Over-defensive instructions from previous model versions
+    - Expecting instructions to add capabilities
+    - Imbalanced trade-off statements
+    - Over-specification of output formats
+    - Single monolithic prompt for complex multi-constraint problems
+  - **Practical value**: Clear decision framework (when to optimize vs upgrade), tangible anti-patterns to avoid, cost-benefit analysis of different approaches
+  - Total corpus: 25 sources ingested (1 today + 24 previous)
+  - Wiki statistics: 144 total pages (80 concepts, 45 entities, 25 summaries, 0 syntheses)
+  - High confidence: 142, Medium confidence: 5, Low confidence: 6
